@@ -1259,6 +1259,20 @@
                     responsiveClass: true,
                     autoplay: true,
                     autoplayTimeout: 5000,
+                    responsive: {
+                        0: {
+                            items: 1  // 当屏幕宽度小于等于0px时，显示1个项目
+                        },
+                        600: {
+                            items: 3  // 当屏幕宽度大于600px时，显示2个项目
+                        },
+                        900: {
+                            items: 4
+                        },
+                        1200: {
+                            items: 5  // 当屏幕宽度大于1000px时，显示4个项目
+                        },
+                    }
                 });
 
                 //廣告收合

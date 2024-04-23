@@ -1131,13 +1131,23 @@ color: #fff
 
 @media screen and (max-width:1024px) {
     .search-area {
-        flex-direction:column;
+        flex-direction:column-reverse;
     }
     .b2b-search-tool {
         width: 90%;
     }
     #b2b-alert {
-        width: 90%;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .b2b-alert-AD img {
+        min-height: 200px;
+    }
+    #B2bAD-owl-carousel .owl-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
     }
 }
 @media screen and (max-width:1023px) {
