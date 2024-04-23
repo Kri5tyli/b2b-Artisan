@@ -839,14 +839,14 @@ ul.b2b-bannerBar-tool li img {
     bottom: 10px;
 }
 
-#B2bAD-owl-carousel .owl-dots .owl-dot span,
-#AD-Sale-scroll2 .owl-dots .owl-dot span {
+#B2bAD-owl-carousel .owl-dots .owl-dot span {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
 #B2bAD-owl-carousel .owl-dots .owl-dot.active span,
 #B2bAD-owl-carousel .owl-dots .owl-dot:hover span,
-#AD-Sale-scroll2 .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
     background-color: #af0000;
     position: relative;
     -webkit-transform: scale(1.3);
@@ -1721,6 +1721,11 @@ bottom: -25px;
         width: 100%;
         line-height: 0;
     }
+}
+
+.hot-local {
+    display: flex;
+    
 }
 
 
