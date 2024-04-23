@@ -757,9 +757,9 @@ ul.b2b-bannerBar-tool li img {
 /*==================== index ====================*/
 
 #b2b-alert {
-    width: 57.5%;
+    width: 58%;
     /* max-width: 1400px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     overflow: hidden;
     font-size: 15px;
     /* line-height: 0; */
@@ -825,6 +825,11 @@ ul.b2b-bannerBar-tool li img {
 
 .b2b-alert-AD .alert-AD-btn {
     display: none;
+}
+
+.b2b-alert-AD img {
+    min-height: 446px;
+    object-fit: cover;
 }
 
 #B2bAD-owl-carousel .owl-dots {
@@ -926,7 +931,9 @@ ul.b2b-bannerBar-tool li img {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+    
 }
 
 @media screen and (max-width:500px) {
@@ -947,7 +954,7 @@ ul.b2b-bannerBar-tool li img {
 /*========================Search========================*/
 
 .b2b-search-tool {
-    width: 39%;
+    width: 40%;
 }
 
 .b2b-search-tool h1 {

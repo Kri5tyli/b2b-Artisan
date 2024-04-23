@@ -728,7 +728,7 @@
                 <!--/b2b top-->
                 <!-- AD-scroll -->
                 <section id="AD-Sale-scroll" class="scroll-text">
-                    <ul>
+                    <ul id="AD-Sale-scroll2" class="owl-carousel owl-theme">
                         <li><a href="https://b2b.artisan.com.tw/ClassifyProduct.aspx?l=l&RadDatePicker1=2023-12-29&RadDatePicker2=2024-06-29&area=37"
                                 target="_blank"><img src="./Images/b2b_dm_download.jpg" alt="" width="100%"></a>
                         </li>
@@ -1260,13 +1260,24 @@
                     $(this).parent().slideUp();
                 });
 
-                //B2bAD 
+                //banner
                 $('#B2bAD-owl-carousel').owlCarousel({
                     loop: true,
                     margin: 10,
                     nav: false,
                     dots: true,
                     items: 1,
+                    responsiveClass: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                });
+                // sale-ad
+                $('#AD-Sale-scroll2').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: false,
+                    dots: true,
+                    items: 5,
                     responsiveClass: true,
                     autoplay: true,
                     autoplayTimeout: 5000,
