@@ -778,7 +778,7 @@
                         </ul>
                     </div>
                     <div class="b2b-hotLocal">
-                        <h1>亞洲精選</h1>
+                        <h1>日本精選</h1>
                         <ul class="b2b-hotLocal_area">
                             <li><a
                                     href="https://b2b.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20240227000001">花海富良野．AOAO水族館．哈蜜瓜三大蟹吃到飽．北海道５天</a>
@@ -824,7 +824,7 @@
 
                 <!-- /Hot Local -->
 
-                <div class="owl-carousel owl-theme" id="owl-ads">
+                <!-- <div class="owl-carousel owl-theme" id="owl-ads">
                     <div class="item"><a
                             href="https://b2b.artisan.com.tw/ClassifyProduct.aspx?l=l&RadDatePicker1=2023-12-29&RadDatePicker2=2024-06-29&area=37"
                             target="_blank"><img src="http://b2b.artisan.com.tw/NewPageFile\20231229085558.jpg" alt=""
@@ -844,7 +844,7 @@
                     <div class="item"><a href="https://b2b.artisan.com.tw/ClassifyProduct.aspx?l=l&area=2&sgcn=28"
                             target="_blank"><img src="http://b2b.artisan.com.tw/NewPageFile\20230113150126.jpg" alt=""
                                 width="100%"></a></div>
-                </div>
+                </div> -->
 
 
 
@@ -1216,18 +1216,30 @@
                 autoplayHoverPause: true
             });
 
-            // AD-SALE-SCROLL
-            // $('#AD-Sale-scroll').owlCarousel({
-            //     items: 1,
-            //     nav: true,
-            //     dots: false,
-            //     responsiveClass: true,
-            //     loop: true,
-            //     autoplay: true,
-            //     autoplayTimeout: 5000,
-            //     navigationText: false,
-            //     autoplayHoverPause: true
-            // });
+            $('#AD-Sale-scroll2').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                items: 5,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: {
+                        items: 1  // 当屏幕宽度小于等于0px时，显示1个项目
+                    },
+                    600: {
+                        items: 3  // 当屏幕宽度大于600px时，显示2个项目
+                    },
+                    900: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5  // 当屏幕宽度大于1000px时，显示4个项目
+                    },
+                }
+            });
 
             $('#AD .AD_mask .AD_img').removeClass('AD_img');
 
@@ -1339,20 +1351,20 @@
                 });
 
                 // ads-m owl
-                $('#owl-ads').owlCarousel({
-                    autoplay: true,
-                    loop: true,
-                    margin: 5,
-                    nav: true,
-                    navText: ["<img src='./images/arrow_prev.png'>", "<img src='./images/arrow_next.png'>"],
-                    dots: false,
-                    items: 1,
-                    responsive: {
-                        768: {
-                            items: 3
-                        }
-                    }
-                })
+                // $('#owl-ads').owlCarousel({
+                //     autoplay: true,
+                //     loop: true,
+                //     margin: 5,
+                //     nav: true,
+                //     navText: ["<img src='./images/arrow_prev.png'>", "<img src='./images/arrow_next.png'>"],
+                //     dots: false,
+                //     items: 1,
+                //     responsive: {
+                //         768: {
+                //             items: 3
+                //         }
+                //     }
+                // })
 
                 //日期datepicker
                 document.getElementById("txtDatePicker1").flatpickr({});
