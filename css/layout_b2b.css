@@ -50,7 +50,6 @@ html, body {
     position: relative;
 }
 
-
 /*========================header========================*/
 
 header {
@@ -411,6 +410,10 @@ nav {
 
 /*==================== index ====================*/
 
+.animation__el.in {
+    transition: all .5s ease-in-out;
+}
+
 .area-1,
 #b2b-content-index {
     width: 100%;
@@ -433,8 +436,6 @@ nav {
     width: 100%;
     
 }
-
-/*========================Search========================*/
 
 .b2b-search-tool {
     width: 40%;
