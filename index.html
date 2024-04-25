@@ -427,37 +427,11 @@
                     <div class="site-overlay"></div>
                     <!-- Pushy JS -->
                     <script src="/js/pushy.min.js"></script>
-
-
-
                 </nav>
             </header>
         </div>
-        <!--/b2b header-->
-
-        <!--b2b top-->
-        <!-- <div id="b2b-top">
-                <div class="b2b-banner-news">
-                    <span>Final Call ‣‣‣ </span>
-                    <marquee direction="left" width="100%" align="botton" scrollamount="3">
-
-                    </marquee>
-                </div>
-                <div id="user-info">
-                    <div class='user-info-list'>負責業務：<span>王承御</span></div>
-                    <div class='user-info-list'>電子郵件：<span>max_wang@artisan.com.tw</span></div>
-                    <div class='user-info-list'>公司電話：<span>02-2518-0011</span></div>
-                    <div class='user-info-list'>傳真：<span>02-2518-5488</span></div>
-                    <div class='user-info-list'>手機：<span>0916-643-109</span></div>
-                </div>
-            </div> -->
-        <!--/b2b top-->
-
-        <!--b2b main-->
-        <!-- <div id="b2b-content-index"> -->
         <!-- search + banner -->
         <div class="area-1">
-
             <section class="search-area">
                 <div class="b2b-search-tool">
                     <h1>團體旅遊</h1>
@@ -467,14 +441,12 @@
                                 <li class="search-title">出發日期</li>
                                 <li class="search-box search-datepicker">
                                     <input name="txtDatePicker1" type="text" id="txtDatePicker1" class="search-textBox"
-                                        value="2024/04/23" placeholder="2024/04/23" /><img src="./images/calendar.svg"
-                                        alt=""
-                                        style="width: 16px; height: 15px; margin-left: -25px; margin-right: 8px; pointer-events: none;" />
+                                        value="2024/04/23" placeholder="2024/04/23" />
+                                    <img src="./images/calendar.svg" alt="" class="date-icon" />
                                     <span>到</span>
                                     <input name="txtDatePicker2" type="text" id="txtDatePicker2" class="search-textBox"
                                         value="2024/10/23" placeholder="2024/04/23" /><img src="./images/calendar.svg"
-                                        alt=""
-                                        style="width: 16px; height: 15px; margin-left: -25px; margin-right: 8px; pointer-events: none;" />
+                                        alt="" class="date-icon" />
                                 </li>
                             </ul>
 
@@ -486,8 +458,8 @@
                                         <option value="巨匠">巨匠</option>
                                         <option value="新視界">新視界</option>
                                         <option value="典藏">典藏</option>
-
                                     </select>
+                                    <img src="./images/selectArrow.svg" alt="" class="select-icon">
                                 </li>
                             </ul>
                             <ul>
@@ -500,6 +472,7 @@
                                         <option value="台中">台中</option>
                                         <option value="高雄">高雄</option>
                                     </select>
+                                    <img src="./images/selectArrow.svg" alt="" class="select-icon">
                                 </li>
                             </ul>
                             <ul>
@@ -532,6 +505,7 @@
                                         <option value="44">中亞．蒙古國</option>
                                         <option value="45">自由行</option>
                                     </select>
+                                    <img src="./images/selectArrow.svg" alt="" class="select-icon">
                                     <select name="DropDownList2" id="DropDownList2" class="search-textBox">
                                         <option selected="selected" value="0" placeholder="全選">全選</option>
                                     </select>
@@ -544,16 +518,26 @@
                                 </li>
 
                             </ul>
-                            <ul>
+                            <ul class="radio-area">
                                 <li class="chk-title"></li>
                                 <li>
-                                    <input id="chkOK" type="radio" name="chk" /><label for="chkOK">已成團</label>
+                                    <input id="chkOK" type="radio" name="chk" class="radio-style" />
+                                    <label for="chkOK" class="radio-label">
+                                        <span class="radio-button"></span>
+                                        已成團</label>
                                 </li>
                                 <li>
-                                    <input id="chkSign" type="radio" name="chk" /><label for="chkSign">可報名</label>
+                                    <input id="chkSign" type="radio" name="chk" class="radio-style" />
+                                    <label for="chkSign" class="radio-label">
+                                        <span class="radio-button"></span>
+                                        可報名</label>
+
                                 </li>
                                 <li>
-                                    <input id="chkAgt" type="radio" name="chk" /><label for="chkAgt">同業專賣</label>
+                                    <input id="chkAgt" type="radio" name="chk" class="radio-style" />
+                                    <label for="chkAgt" class="radio-label">
+                                        <span class="radio-button"></span>
+                                        同業專賣</label>
                                 </li>
                             </ul>
                             <ul>
@@ -567,7 +551,7 @@
                 </div>
                 <!-- /search -->
                 <!--b2b top-->
-                <div id="b2b-top" class="top-mobel">
+                <div id="b2b-top" class="top-mobile">
                     <div class="b2b-banner-news">
                         <span>Final Call ‣‣‣ </span>
                         <marquee direction="left" width="100%" align="botton" scrollamount="3">
@@ -732,38 +716,6 @@
                     </ul>
                 </div>
             </section>
-
-
-            <!-- Hot Local -->
-
-            <!-- /Hot Local -->
-
-            <!-- <div class="owl-carousel owl-theme" id="owl-ads">
-                    <div class="item"><a
-                            href="https://b2b.artisan.com.tw/ClassifyProduct.aspx?l=l&RadDatePicker1=2023-12-29&RadDatePicker2=2024-06-29&area=37"
-                            target="_blank"><img src="http://b2b.artisan.com.tw/NewPageFile\20231229085558.jpg" alt=""
-                                width="100%"></a></div>
-                    <div class="item"><a href="https://www.luxetravel.com.tw/" target="_blank"><img
-                                src="http://b2b.artisan.com.tw/NewPageFile\20210929152156.jpg" alt="" width="100%"></a>
-                    </div>
-                    <div class="item"><a href="https://b2b.artisan.com.tw/ClassifyProduct.aspx?l=l&area=7&sgcn=58"
-                            target="_blank"><img src="http://b2b.artisan.com.tw/NewPageFile\20221123150458.jpg" alt=""
-                                width="100%"></a></div>
-                    <div class="item"><a href="https://b2b.artisan.com.tw/ClassifyProduct.aspx?l=l&area=1&sgcn=3"
-                            target="_blank"><img src="http://b2b.artisan.com.tw/NewPageFile\20230308182357.jpg" alt=""
-                                width="100%"></a></div>
-                    <div class="item"><a href="https://b2b.artisan.com.tw/exh/Exhibition.aspx?area=6"
-                            target="_blank"><img src="http://b2b.artisan.com.tw/NewPageFile\20221123162749.jpg" alt=""
-                                width="100%"></a></div>
-                    <div class="item"><a href="https://b2b.artisan.com.tw/ClassifyProduct.aspx?l=l&area=2&sgcn=28"
-                            target="_blank"><img src="http://b2b.artisan.com.tw/NewPageFile\20230113150126.jpg" alt=""
-                                width="100%"></a></div>
-                </div> -->
-
-
-
-
-
 
 
             <!-- Trip List -->
@@ -988,9 +940,6 @@
             </div>
             <!-- /Trip List -->
 
-            <!-- ADs PC -->
-            <!-- /ADs PC -->
-
             <!-- ADs mobile -->
             <div class="b2b-ads-m">
                 <div class="season_sale_m" style="display: none;">
@@ -1008,9 +957,8 @@
         </div>
         <!--/b2b main-->
 
+
         <!--b2b footer-->
-
-
         <footer>
             <div class="footer-link">
                 <div class="container">
@@ -1138,16 +1086,16 @@
                 autoplayTimeout: 5000,
                 responsive: {
                     0: {
-                        items: 1  // 当屏幕宽度小于等于0px时，显示1个项目
+                        items: 1
                     },
                     600: {
-                        items: 3  // 当屏幕宽度大于600px时，显示2个项目
+                        items: 3
                     },
                     900: {
                         items: 4
                     },
                     1200: {
-                        items: 5  // 当屏幕宽度大于1000px时，显示4个项目
+                        items: 5
                     },
                 }
             });
@@ -1260,22 +1208,6 @@
                 $('.ad_forward').click(function () {
                     $('#AD-Sale-scroll').trigger('forward');
                 });
-
-                // ads-m owl
-                // $('#owl-ads').owlCarousel({
-                //     autoplay: true,
-                //     loop: true,
-                //     margin: 5,
-                //     nav: true,
-                //     navText: ["<img src='./images/arrow_prev.png'>", "<img src='./images/arrow_next.png'>"],
-                //     dots: false,
-                //     items: 1,
-                //     responsive: {
-                //         768: {
-                //             items: 3
-                //         }
-                //     }
-                // })
 
                 //日期datepicker
                 document.getElementById("txtDatePicker1").flatpickr({});
